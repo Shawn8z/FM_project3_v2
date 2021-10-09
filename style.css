@@ -1,0 +1,168 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+
+body {
+    background: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+main {
+    display: block;
+    padding: 6rem 1.43rem;
+}
+
+.flex_box {
+    max-width: 320px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden; 
+    border-radius: 6px;
+    /* overflow could be used as a mask to hide any decendent element parts that are out of the order of their parent element*/
+}
+
+img {
+    width: 58px;
+    height: auto;
+}
+
+h2 {
+    position: relative;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 38px;
+    margin: 0;
+    top: 22px;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7em;
+    position: relative;
+    top: 35px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.learn_more {
+    background: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    text-decoration: none;
+    padding: 11px 23px;
+    border-radius: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    position: relative;
+    top: 70px;
+}
+
+.sub_block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 430px;
+    padding: 40px;
+}
+
+
+.sedans:nth-child(1) {
+    background: hsl(31, 77%, 52%);
+}
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+.sedans a:hover {
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.sub_block:nth-child(2) {
+    background: hsl(184, 100%, 22%);
+}
+.suvs a {
+    color: hsl(184, 100%, 22%);
+}
+.suvs a:hover {
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.sub_block:nth-child(3) {
+    background: hsl(179, 100%, 13%);
+}
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+.luxury a:hover {
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 710px) {
+    main {
+        display: block;
+    }
+
+    .flex_box {
+        max-width: 880px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden; 
+        border-radius: 6px;
+        /* overflow could be used as a mask to hide any decendent element parts that are out of the order of their parent element*/
+    }
+
+    h2 {
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        color: hsl(0, 0%, 95%);
+    }
+    
+    p {
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .learn_more {
+        position: absolute;
+        top: 500px
+    }
+
+    .sub_block {
+        height: 500px
+    }
+}
+
+@media (min-width: 880px) {
+    
+
+    .learn_more {
+        position: absolute;
+        top: 460px;
+    }
+
+    .sub_block {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 430px;
+        padding: 40px;
+    }
+
+
+}
