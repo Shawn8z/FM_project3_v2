@@ -29,7 +29,7 @@ main {
     align-items: stretch;
     overflow: hidden; 
     border-radius: 6px;
-    /* overflow could be used as a mask to hide any decendent element parts that are out of the order of their parent element*/
+    /* overflow could be used as a mask to hide any decendent element parts that are out of the border of their parent element*/
 }
 
 img {
@@ -130,7 +130,6 @@ p {
         flex-direction: row;
         overflow: hidden; 
         border-radius: 6px;
-        /* overflow could be used as a mask to hide any decendent element parts that are out of the order of their parent element*/
     }
 
     h2 {
