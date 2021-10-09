@@ -37,6 +37,11 @@ img {
     height: auto;
 }
 
+h1 {
+    position: absolute;
+    visibility: hidden;
+}
+
 h2 {
     position: relative;
     font-family: 'Big Shoulders Display', cursive;
@@ -55,6 +60,8 @@ p {
     position: relative;
     top: 35px;
     color: hsla(0, 0%, 100%, 0.75);
+    height: 150px;
+    overflow: hidden;
 }
 
 .learn_more {
@@ -66,7 +73,7 @@ p {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     position: relative;
-    top: 70px;
+    top: 50px;
 }
 
 .sub_block {
@@ -136,11 +143,12 @@ p {
         font-family: 'Lexend Deca', sans-serif;
         font-weight: 400;
         color: hsla(0, 0%, 100%, 0.75);
+        height: 170px;
     }
 
     .learn_more {
-        position: absolute;
-        top: 500px
+        position: relative;
+        top: 90px;
     }
 
     .sub_block {
@@ -150,10 +158,9 @@ p {
 
 @media (min-width: 880px) {
     
-
     .learn_more {
-        position: absolute;
-        top: 460px;
+        position: relative;
+        top: 25px;
     }
 
     .sub_block {
